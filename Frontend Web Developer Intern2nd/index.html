@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Web Design Implementation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Responsive Web Design Project</h1>
+    <nav>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#concepts">Concepts</a></li>
+        <li><a href="#examples">Examples</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="overview" class="hero">
+    <h2>Design Once, Adapt Everywhere</h2>
+    <p>
+      This webpage demonstrates the core principles of Responsive Web Design (RWD) — 
+      using flexible grids, fluid images, and CSS media queries to create adaptive layouts 
+      for desktops, tablets, and smartphones.
+    </p>
+    <a href="#examples" class="btn">View Examples</a>
+  </section>
+
+  <!-- Concepts Section -->
+  <section id="concepts" class="concepts">
+    <h2>Key Concepts in Responsive Design</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Flexible Grids</h3>
+        <p>Layouts are built using percentage-based widths to ensure elements scale smoothly across screen sizes.</p>
+      </div>
+      <div class="card">
+        <h3>Fluid Images</h3>
+        <p>Images automatically resize to fit their containers without distortion or overflow.</p>
+      </div>
+      <div class="card">
+        <h3>Media Queries</h3>
+        <p>CSS media queries adjust font sizes, layouts, and visibility based on device width.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Examples Section -->
+  <section id="examples" class="examples">
+    <h2>Responsive Layout Examples</h2>
+    <div class="example-grid">
+      <div class="example">
+        <img src="1st.jpg" alt="Example 1">
+        <h4>Desktop View</h4>
+        <p>Displays multiple columns for a wide-screen layout.</p>
+      </div>
+      <div class="example">
+        <img src="./2nd.jpg" alt="Example 2">
+        <h4>Tablet View</h4>
+        <p>Adjusts grid to two columns for better readability.</p>
+      </div>
+      <div class="example">
+        <img src="/4.jpg" alt="Example 3">
+        <h4>Mobile View</h4>
+        <p>Stacks all content vertically for easy scrolling.</p>
+      </div>
+    </div>
+  </section>  
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <p>If you have questions about responsive design, feel free to contact us below.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Responsive Web Design Project | All Rights Reserved</p>
+  </footer>
+</body>
+</html>

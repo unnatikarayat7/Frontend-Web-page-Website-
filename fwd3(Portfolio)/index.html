@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <button id="themeBtn">🌙 Dark Mode</button>
+  </header>
+
+  <section class="intro">
+    <h2>Welcome!</h2>
+    <p>I’m a Frontend Developer Intern creating interactive web experiences.</p>
+  </section>
+
+  <section class="projects">
+    <h2>My Projects</h2>
+    <div class="project-card">
+      <h3>Responsive Web Design</h3>
+      <p>Click below to view details about this project.</p>
+      <p id="details" class="hidden">
+        This project focuses on creating a mobile-friendly website using HTML, CSS, and media queries.
+      </p>
+      <button id="toggleDetails">Show Details</button>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+      <p id="formMsg"></p>
+    </form>
+  </section>
+
+  <button id="scrollTopBtn" title="Go to top">⬆️</button>
+
+  <footer>
+    <p>© 2025 My Portfolio | Designed with ❤️ using HTML, CSS, and JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

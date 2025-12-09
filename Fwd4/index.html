@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Accessible and optimized webpage for performance and inclusivity." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessible & Optimized Webpage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header role="banner">
+    <h1>Accessible & Optimized Webpage</h1>
+    <nav role="navigation" aria-label="Main Navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content">
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About This Page</h2>
+      <p>This page is built to demonstrate performance and accessibility optimization using semantic HTML and CSS best practices.</p>
+      <img src="https://via.placeholder.com/400x200" alt="Optimized sample webpage preview" loading="lazy" />
+    </section>
+
+    <section id="features" aria-labelledby="features-heading">
+      <h2 id="features-heading">Key Features</h2>
+      <ul>
+        <li>Fast load time through minified and efficient CSS</li>
+        <li>Keyboard and screen reader friendly design</li>
+        <li>Optimized image loading with alt text</li>
+      </ul>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Us</h2>
+      <form aria-label="Contact form">
+        <label for="name">Name:</label>
+        <input id="name" type="text" name="name" aria-required="true" required />
+
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email" aria-required="true" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" aria-required="true" required></textarea>
+
+        <button type="submit" aria-label="Submit message">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>© 2025 Accessible Web Project | Built with using HTML & CSS</p>
+  </footer>
+</body>
+</html>

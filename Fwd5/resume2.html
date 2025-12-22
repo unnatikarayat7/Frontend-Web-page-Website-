@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Resume</title>
+  <style>
+    /* Basic reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #111;
+      background: #f6f6f6;
+      padding: 24px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Container */
+    .sheet {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 28px;
+      border-radius: 8px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 24px;
+    }
+
+    /* Header */
+    header {
+      grid-column: 1 / -1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #e6e6e6;
+      padding-bottom: 18px;
+      margin-bottom: 18px;
+    }
+    .name {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1;
+    }
+    .title {
+      color: #555;
+      font-size: 14px;
+      margin-top: 6px;
+    }
+
+    /* Main and aside */
+    main {
+      padding-right: 6px;
+    }
+    aside {
+      padding-left: 6px;
+      border-left: 1px solid #f0f0f0;
+    }
+
+    /* Sections */
+    section { margin-bottom: 18px; }
+    h2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.9px;
+      color: #444;
+      margin-bottom: 10px;
+    }
+    .job {
+      margin-bottom: 12px;
+    }
+    .job .company {
+      font-weight: 600;
+    }
+    .job .meta {
+      font-size: 13px;
+      color: #666;
+    }
+    p { margin-top: 8px; color: #333; line-height: 1.45; }
+
+    /* Skills list */
+    .skills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .skill {
+      background: #f2f7ff;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      color: #0b4da2;
+    }
+
+    /* Contact */
+    .contact-item { font-size: 14px; color: #333; margin-bottom: 8px; }
+    .contact-item a { color: inherit; text-decoration: none; }
+
+    /* Education small */
+    .edu-item { margin-bottom: 10px; }
+
+    /* Small screens */
+    @media (max-width: 800px) {
+      .sheet { grid-template-columns: 1fr; padding: 18px; }
+      aside { border-left: none; border-top: 1px solid #f0f0f0; padding-top: 14px; margin-top: 8px; }
+      header { flex-direction: column; align-items: flex-start; gap: 8px; }
+    }
+
+    /* Print styles */
+    @media print {
+      body { background: white; padding: 0; }
+      .sheet { box-shadow: none; border-radius: 0; max-width: 100%; }
+      a::after { content: " (" attr(href) ")"; font-size: 10px; color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <div class="sheet" role="document">
+    <header>
+      <div>
+        <div class="name">Your Name</div>
+        <div class="title">Frontend Developer • HTML/CSS • JavaScript</div>
+      </div>
+      <div style="text-align:right;">
+        <div style="font-weight:600;">City, Country</div>
+        <div style="color:#666; font-size:13px; margin-top:6px;">Email: <a href="mailto:you@example.com">you@example.com</a></div>
+        <div style="color:#666; font-size:13px; margin-top:4px;">Phone: +91 98x xxx xxxx</div>
+      </div>
+    </header>
+
+    <main>
+      <section aria-labelledby="summary-title">
+        <h2 id="summary-title">Summary</h2>
+        <p>
+          Short professional summary (2–3 lines). Example: "Frontend developer with 3 years experience building responsive websites using HTML, CSS, JavaScript, and React. Focused on clean UI and accessible user experiences."
+        </p>
+      </section>
+
+      <section aria-labelledby="exp-title">
+        <h2 id="exp-title">Experience</h2>
+
+        <article class="job" aria-labelledby="job1">
+          <div id="job1" class="company">Company Name — <span class="meta">Frontend Developer</span></div>
+          <div class="meta">Jun 2022 — Present • City</div>
+          <p>
+            - Built responsive landing pages and internal dashboards using HTML, CSS, and vanilla JS. <br>
+            - Improved page load time by 25% by optimizing assets and lazy-loading images. <br>
+            - Collaborated with designers and backend to ship features weekly.
+          </p>
+        </article>
+
+        <article class="job" aria-labelledby="job2">
+          <div id="job2" class="company">Another Company — <span class="meta">Junior Web Developer</span></div>
+          <div class="meta">Jan 2020 — May 2022 • City</div>
+          <p>
+            - Converted Figma mocks into pixel-perfect HTML/CSS pages. <br>
+            - Wrote unit tests and improved site accessibility.
+          </p>
+        </article>
+      </section>
+
+      <section aria-labelledby="projects-title">
+        <h2 id="projects-title">Projects</h2>
+        <div style="margin-bottom:10px;">
+          <strong>Project Name</strong> — Small description. <br>
+          <a href="https://example.com" target="_blank" rel="noopener">Live / Repo</a>
+        </div>
+        <div>
+          <strong>Another Project</strong> — Short description and tech used (HTML, CSS, JS).
+        </div>
+      </section>
+    </main>
+
+    <aside>
+      <section aria-labelledby="skills-title">
+        <h2 id="skills-title">Skills</h2>
+        <div class="skills">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">Responsive Design</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">React</div>
+          <div class="skill">Git</div>
+        </div>
+      </section>
+
+      <section aria-labelledby="edu-title">
+        <h2 id="edu-title">Education</h2>
+        <div class="edu-item">
+          <div style="font-weight:600;">B.Sc. in Computer Science</div>
+          <div class="meta">University Name — 2016 — 2019</div>
+        </div>
+      </section>
+
+      <section aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <div class="contact-item">Email: <a href="mailto:you@example.com">you@example.com</a></div>
+        <div class="contact-item">Phone: +91 98x xxx xxxx</div>
+        <div class="contact-item">LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">yourprofile</a></div>
+        <div class="contact-item">Website: <a href="https://your-portfolio.example" target="_blank" rel="noopener">your-portfolio.example</a></div>
+      </section>
+    </aside>
+  </div>
+</body>
+</html>
